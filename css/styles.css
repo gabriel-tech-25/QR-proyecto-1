@@ -1,0 +1,77 @@
+/* fuente */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    /* colores */
+    --slate-900: #1f314f;
+    --slate-500: #68778D;
+    --slate-300: #d5e1ef;
+    --white: #fff;
+
+    /* espaciado */
+    --spacing-500: 4rem;
+    --spacing-300: 2.4rem;
+    --spacing-200: 1.6rem;
+}
+
+/* tipografia */
+.text-preset-1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    text-align: center;
+    /* sin letter spacing*/
+}
+
+.text-preset-2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: var(--slate-300);
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background-color: var(--white);
+    width: 32rem;
+    height: 49.9rem;
+    padding: var(--spacing-200) var(--spacing-200) var(--spacing-500);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+    border-radius: 2rem;
+}
+
+.contenedor img {
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+}
+.text-contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+}
